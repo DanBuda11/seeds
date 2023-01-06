@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+}
+
+.btn {
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  padding: 0;
+  border: none;
+  color: #b9090b;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.btn i {
+  margin: 0;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header,
+.footer {
+  background-color: #235789;
+  color: #fff;
+}
+
+.header {
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+#main {
+  padding: 1rem 2rem;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.channelContainer,
+.bookSeries {
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.channelContainer:last-of-type,
+.bookSeries:last-of-type {
+  border: none;
+}
+
+h2 {
+  margin: 0 0 0.3rem 0;
+  font-size: 26px;
+}
+
+h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.footer a {
+  color: #fff;
+}
