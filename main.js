@@ -1,8 +1,5 @@
 const main = document.getElementById('main');
 
-const btn = document.querySelector('.btn');
-const btnIcon = document.querySelector('.fas');
-
 // Create empty array to store data (push) each time a data item is mapped over
 let allData = [];
 
@@ -207,7 +204,7 @@ function renderShows(data) {
       const channelData = [];
       // Create the h2 element for the channel name
 
-      const channelName = `<div class="channelContainer"><h2 style="color:#${channel.color};">${channel.name}</h2>`;
+      const channelName = `<div class="channelContainer"><h2>${channel.name}</h2>`;
 
       // Push the 1st half of the ul tag with class name into the array
       channelData.push(`${channelName}<ul class='${channel.class}list'>`);
@@ -249,18 +246,6 @@ function renderBooks(books) {
   main.innerHTML = allData.join('');
   allData = [];
 }
-
-btn.addEventListener('click', () => {
-  if (btnIcon.classList.contains('fa-book')) {
-    btnIcon.classList.add('fa-tv');
-    btnIcon.classList.remove('fa-book');
-    renderBooks(books);
-  } else {
-    btnIcon.classList.remove('fa-tv');
-    btnIcon.classList.add('fa-book');
-    renderShows(data);
-  }
-});
 
 // Run the function for initial render
 renderShows(data);

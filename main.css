@@ -2,31 +2,9 @@ body {
   font-family: sans-serif;
 }
 
-.btn {
-  bottom: 20px;
-  right: 20px;
-  position: fixed;
-  padding: 0;
-  border: none;
-  color: #b9090b;
-  cursor: pointer;
-  outline: none;
-  background: transparent;
-  transition: 0.5s ease;
-}
-
-.btn:hover {
-  transform: scale(1.2);
-}
-
-.btn i {
-  margin: 0;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-
 .header,
 .footer {
-  background-color: #235789;
+  background-color: #0f642f;
   color: #fff;
 }
 
@@ -48,7 +26,6 @@ h1 {
 .channelContainer,
 .bookSeries {
   padding: 1rem;
-  border-bottom: 1px solid #000;
 }
 
 .channelContainer:last-of-type,
